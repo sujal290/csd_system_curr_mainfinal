@@ -108,7 +108,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            /* background-color: #f8f9fa; */
+            background-color:#00F3BF;
             color: #333;
         }
 
@@ -126,6 +127,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .header-actions h2 {
             margin: 0;
             font-weight: bold;
+            
         }
 
         .table-container {
@@ -154,6 +156,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         th {
             background-color: #f4f4f4;
         }
+
+
+        th {
+        background-color: #4CAF50; /* Darker header background */
+        color: white; /* Header text color */
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2; /* Light grey background for even rows */
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #ffffff; /* White background for odd rows */
+    }
 
         .temp{
             display: flex;
