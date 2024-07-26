@@ -109,7 +109,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin: 0;
             font-family: Arial, sans-serif;
             /* background-color: #f8f9fa; */
-            background-color:#00F3BF;
+            background-color:rgb(209, 199, 158);
+            
             color: #333;
         }
 
@@ -127,6 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .header-actions h2 {
             margin: 0;
             font-weight: bold;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             
         }
 
@@ -134,9 +136,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             overflow-x: auto;
             border: 1px solid #ddd;
             border-radius: 5px;
-            background: white;
+            background: orange;
             padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
             transition: box-shadow 0.3s ease-in-out;
         }
 
@@ -154,13 +156,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         th {
-            background-color: #f4f4f4;
+            background-color: pink;
         }
 
 
         th {
         background-color: #4CAF50; /* Darker header background */
-        color: white; /* Header text color */
+        color: skypink; /* Header text color */
     }
 
     tbody tr:nth-child(even) {
@@ -200,7 +202,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <div class="header-actions mb-3 mt-4">
-            <h4>Available Items</h4>
+            <h2 class="font-weight-bold">Available Items</h2>
             <div>
                 <a href="admin_orders.php" class="btn btn-primary">Orders</a>
                 <button id="add-btn" class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
